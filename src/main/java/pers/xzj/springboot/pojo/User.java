@@ -1,9 +1,10 @@
 package pers.xzj.springboot.pojo;
 
 import java.util.Date;
+
 import lombok.Data;
 
- /**
+/**
  * @Description user
  * @Author xzj (x378042733@gmail.com)
  * @Date 2021-01-15 9:01
