@@ -2,6 +2,7 @@ package pers.xzj.springboot.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import pers.xzj.springboot.anno.Anno;
 import pers.xzj.springboot.dao.UserMapper;
 import pers.xzj.springboot.pojo.User;
 import pers.xzj.springboot.utils.Pager;
@@ -39,6 +40,7 @@ public class UserController {
     }
 
 
+    @Anno
     @GetMapping("/page/{page}/{size}")
     public Pager<User> findByPager(@PathVariable("page") int page, @PathVariable("size") int size) {
         Map<String, Object> params = new HashMap<>();
